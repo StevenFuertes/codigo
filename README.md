@@ -52,4 +52,7 @@ git log
 ```bash
  git remote set-url origin https://github.com/StevenFuertes/codigo.git
  ```
- * Git push origin main (seguido)
+ * Con este codigo sube los datos al github
+```bash
+ Git push origin main 
+ ```
