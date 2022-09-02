@@ -2,7 +2,7 @@
 
 Lista de comando git
 
-* Para poder ver la versino
+* Para poder ver la version
 
 ```bash
 git --version
@@ -47,3 +47,9 @@ git commit -m "xxx"
 ```bash
 git log
 ```
+* Cambia el origen
+
+```bash
+ git remote set-url origin https://github.com/StevenFuertes/codigo.git
+ ```
+ * Git push origin main (seguido)
