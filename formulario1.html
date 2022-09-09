@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <input name="name" type="text" placeholder="Ingresa tu nombre" required>
+        </p>
+        <p>
+            <input type="number" maxlength="8" placeholder="Ingresa tu DNI" required>
+        </p>
+        <!-- readonly evita que se editen los datos pero igual se envian -->
+        <p>
+            <input name="age" type="number" placeholder="Ingresa edad">
+        </p>
+        <p>
+            <input name="email" type="email" placeholder="Ingresa tu correo" required>
+        </p>
+        <p>
+            <input name="pass" type="password" placeholder="Ingresa tu contraseña" required>
+        </p>
+        <p>
+            <input name="date" type="date" placeholder="Ingresa su fecha" required>
+        </p>
+        <p>
+          <select required>
+            <option value="" disabled selected>Elige un curso</option>
+            <option value="1">Curso react</option>
+            <option value="2">Curso de HTML</option>
+            <option value="3">Curso de CSS</option>
+          </select>
+        </p>
+        <!-- Especificando submit enviamos los datos -->
+        <button type="submit">Enviar datos con boton</button>
+        <input type="submit" value="Enviar datos con input">
+        <button type="button">Cancelar</button>
+    </form>    
+</body>
+</html>
