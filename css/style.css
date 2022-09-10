@@ -4,30 +4,46 @@ h1 {
     color: green;
     background-color: beige;
     text-align: center;
+    font-size: 20px;
+    padding: 20px;
 }
-h2 {
-    text-align: center;
-}
-/* selector de clase jerarquia semi media*/
-.titulo {
-    color: blue;
-    font-size: 30px;
-    background-color: skyblue;
-}
-/* Selector de ID jerarquia media */
-#titulo_huawei {
-    color: yellow;
-}
-
 #div_temas {
     display: none;
 }
 
-.big_table{
-    font-size: 30px;
-    border: 4px solid;
-    border-color: silver;
+.product_cell {
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
 }
-.big_table th, td {
-    padding: 20px;
+/* > busca por dentro */
+.laptop > h2 {
+    color: blue;
+}
+
+.laptop > h3 {
+    color: cadetblue;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.celular > h2 {
+    color: red;
+}
+
+.celular > h3 {
+    color: purple ;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.audifono > h2 {
+    color: green;
+}
+
+.audifono > h3 {
+    color: aqua ;
+    text-align: right;
+    padding-right: 10px;
 }
