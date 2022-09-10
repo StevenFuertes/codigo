@@ -1,18 +1,25 @@
 <html>
     <head>
-        <title>
-            Inicio
-        </title>
+        <title>Inicio</title>
+        <link rel="stylesheet" href="./css/style.css">
+    <!--  <style>
+            #div_temas{
+                display: none;
+            }
+    </style>-->
+        
     </head>
     <body>
         <div style="width: 800px; margin:10px auto;">
             <header>
-                <h1 style="text-align: center;">Apple.com</h1>
+                <h1>Apple.com</h1>
                 <p>Productos top</p>
             </header>
             <!-- Titulos segun relevancia -->
             <main>
-                <div>
+            <!-- la prop. display quita la visualizacion -->
+            <!-- style="display: none;" -->
+                <div  id="div_temas">
                     <h4>Temas</h4>
                     <ul>
                         <li>
@@ -50,6 +57,45 @@
                             </div>
                         </td>
                     </tr>
+                </table>
+                <h2 class="titulo">Samsung</h2>
+                <h2 class="titulo" id="titulo_huawei">Huawei</h2>
+                <h2>Jerarquia de CSS</h2>
+                <table class="big_table">
+                    <thead>
+                        <tr>
+                            <th>Metodo</th>
+                            <th>Jerarquia</th>
+                            <th>Peso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Selector de elemento</td>
+                            <td>elemento</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Selector de clase</td>
+                            <td>.class_name</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Selector de atributo</td>
+                            <td>selector[atributo]</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Selector de ID</td>
+                            <td>#id</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>HTML Style</td>
+                            <td>stlye=""</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>                   
                 </table>
     
             </main>

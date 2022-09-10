@@ -1,0 +1,33 @@
+/* Selectores */
+/* Selector de elemento jerarquia menor*/
+h1 {
+    color: green;
+    background-color: beige;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+/* selector de clase jerarquia semi media*/
+.titulo {
+    color: blue;
+    font-size: 30px;
+    background-color: skyblue;
+}
+/* Selector de ID jerarquia media */
+#titulo_huawei {
+    color: yellow;
+}
+
+#div_temas {
+    display: none;
+}
+
+.big_table{
+    font-size: 30px;
+    border: 4px solid;
+    border-color: silver;
+}
+.big_table th, td {
+    padding: 20px;
+}
