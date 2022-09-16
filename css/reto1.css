@@ -91,3 +91,8 @@
     align-items: center;
     gap: 15px;
   }
+
+  button:hover {
+    cursor: pointer;
+    background-color: green;
+  }
