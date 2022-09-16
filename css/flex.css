@@ -1,0 +1,38 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+/* convierte a los elementos internos en filas */
+.padre{
+    display: flex;
+    /* respeta el ancho y manda el objeto a siguiente linea */
+    flex-wrap: wrap;
+    /* vh usa el ancho de la pantalla */
+    height: 100vh;
+  /* justify-content: Permite alinear elementos de lado horizontal */
+  /* flex-start: izquerda */
+  /* center: medio */
+  /* flex-end: derecha */
+  /* space-between: mando los elemenos de extremo a extremo */
+  /* space-around:se parecea a space-between pero da unos margentes
+  al inicio y al final  */
+  /* space-evenly: pero los spacios entre elementos son iguales */
+    justify-content: space-between;
+    /* propiedad de flex que permite alinear elementos verticalmente y comparte todas las propiedades de justify-content */
+    align-items: center;
+}
+
+.hijo {
+    width: 25%;
+    height: 100px;
+    border: solid 1px green;
+    background-color: #fff;
+}
