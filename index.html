@@ -1,125 +1,110 @@
 <html>
-    <head>
-        <title>Inicio</title>
-        <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <!--  <style>
             #div_temas{
                 display: none;
             }
     </style>-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div tyle="margin: 0px auto; padding: 0;">
+      <header style="font-size: 20px">
+        <h1>Apple.com</h1>
+        <p style="text-align: center">Productos top</p>
+      </header>
+      <!-- Titulos segun relevancia -->
+      <main>
+        <!-- la prop. display quita la visualizacion -->
+        <!-- style="display: none;" -->
+        <div id="div_temas">
+          <h4>Menu</h4>
+          <ul>
+            <li>
+              <a href="./formulario1.html">Formularios</a>
+            </li>
+            <li>
+              <a href="./tablas.html">Tablas</a>
+            </li>
+            <li>
+              <a href="./reto1.html">Tablas</a>
+            </li>
+          </ul>
+        </div>
+        <div class="productos">
+          <div class="product celular">
+            <h2>iPhone 13</h2>
+            <h3 class="price">700</h3>
+            <img
+              width="200px"
+              src="https://images.unsplash.com/photo-1632633173522-47456de71b76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+              alt="Foto de iPhone 13 color silver"
+            />
+          </div>
+          <div class="product laptop">
+            <h2>Macbook Pro</h2>
+            <h3 class="price">800</h3>
+            <img
+              width="200px"
+              src="https://images.unsplash.com/photo-1615750185825-fc85c6aba18d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="Foto de macbook pro abierta"
+            />
+          </div>
+          <div class="product audifono">
+            <h2>Airpods Pro</h2>
+            <h3 class="price">100</h3>
+            <img
+              width="200px"
+              src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="Foto de airpods pro"
+            />
+          </div>
+          <div class="product celular">
+            <h2>iPhone 14</h2>
+            <h3 class="price">800</h3>
+            <img
+              width="200px"
+              src="https://images.unsplash.com/photo-1653921167679-7676ed531a58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"
+              alt="Foto de iPhone 13 color silver"
+            />
+          </div>
+          <div class="product laptop">
+            <h2>Macbook Air</h2>
+            <h3 class="price">900</h3>
+            <img
+              width="200px"
+              src="https://images.unsplash.com/photo-1532198528077-0d9e4ca9bb40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=847&q=80"
+              alt="Foto de macbook pro abierta"
+            />
+          </div>
+          <div class="product audifono">
+            <h2>Airpods Max</h2>
+            <h3 class="price">200</h3>
+            <img
+              width="200px"
+              src="https://images.unsplash.com/photo-1625245488600-f03fef636a3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+              alt="Foto de airpods pro"
+            />
+          </div>
+        </div>
         
-    </head>
-    <body>
-        <div style="width: 800px; margin:10px auto;">
-            <header style="font-size: 20px;">
-                <h1>Apple.com</h1>
-                <p style="text-align: center">Productos top</p>
-            </header>
-            <!-- Titulos segun relevancia -->
-            <main>
-            <!-- la prop. display quita la visualizacion -->
-            <!-- style="display: none;" -->
-                <div  id="div_temas">
-                    <h4>Temas</h4>
-                    <ul>
-                        <li>
-                            <a href="./formulario1.html">Formularios</a>
-                        </li>
-                        <li>
-                            <a href="./tablas.html">Tablas</a>
-                        </li>
-                        <li>
-                          <a href="./reto1.html">Tablas</a>
-                        </li>
-                    </ul>
-                </div>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                              <div class="product_cell celular">
-                                <h2>iPhone 13</h2>
-                                <h3 class="price">700</h3>
-                                <img
-                                  width="200px"
-                                  src="https://images.unsplash.com/photo-1632633173522-47456de71b76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
-                                  alt="Foto de iPhone 13 color silver"
-                                />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="product_cell laptop">
-                                <h2>Macbook Pro</h2>
-                                <h3 class="price">800</h3>
-                                <img
-                                  width="200px"
-                                  src="https://images.unsplash.com/photo-1615750185825-fc85c6aba18d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                  alt="Foto de macbook pro abierta"
-                                />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="product_cell audifono">
-                                <h2>Airpods Pro</h2>
-                                <h3 class="price">100</h3>
-                                <img
-                                  width="200px"
-                                  src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                  alt="Foto de airpods pro"
-                                />
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="product_cell celular">
-                                <h2>iPhone 14</h2>
-                                <h3 class="price">800</h3>
-                                <img
-                                  width="200px"
-                                  src="https://images.unsplash.com/photo-1653921167679-7676ed531a58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"
-                                  alt="Foto de iPhone 13 color silver"
-                                />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="product_cell laptop">
-                                <h2>Macbook Air</h2>
-                                <h3 class="price">900</h3>
-                                <img
-                                  width="200px"
-                                  src="https://images.unsplash.com/photo-1532198528077-0d9e4ca9bb40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=847&q=80"
-                                  alt="Foto de macbook pro abierta"
-                                />
-                              </div>
-                            </td>
-                            <td>
-                              <div class="product_cell audifono">
-                                <h2>Airpods Max</h2>
-                                <h3 class="price">200</h3>
-                                <img
-                                  width="200px"
-                                  src="https://images.unsplash.com/photo-1625245488600-f03fef636a3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                                  alt="Foto de airpods pro"
-                                />
-                              </div>
-                            </td>
-                          </tr>
-                    </tbody>
-                  </table>
-                  <section>
-                    <h2>Contacto</h2>
-                    <form action="">
-                        <div class="div_form">
-                            <input type="text" name="">
-                            <button type="submit">Enviar</button>
-                        </div>
-                    </form>
-                  </section>
-                <!-- </table>
+        <section>
+          <h2>Contacto</h2>
+          <div class="div_form">
+            <form action="#">
+              <input type="text" name="" id="" />
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
+        <!-- </table>
                 <h2 class="titulo">Samsung</h2>
                 <h2 class="titulo" id="titulo_huawei">Huawei</h2>
                 <h2>Jerarquia de CSS</h2>
@@ -160,14 +145,10 @@
                     </tbody>                   
                 </table>
      -->
-                
-            </main>
-            <footer>
-                <p style="text-align: center">Hecho por Steven</p>
-            </footer>
-
-        </div>
-
-
-    </body>
+      </main>
+      <footer>
+        <p style="text-align: center">Hecho por Steven</p>
+      </footer>
+    </div>
+  </body>
 </html>
