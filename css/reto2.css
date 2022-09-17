@@ -10,33 +10,47 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     height: 100vh;
 }
 
+.margen {
+    background-color:hsl(216, 50%, 16%);
+    height: 25px;
+    width: 350px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.imagen-nft {
+    background: url("../images/image-equilibrium.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    height: 300px;
+    width: 350px;
+    background-color:hsl(216, 50%, 16%);
+}
+
 .content-nft {
-    height: 525px;
+    height: 250px;
     width: 350px;
     padding: 20px;
     background-color:hsl(216, 50%, 16%);
-    border-radius: 8px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
 }
+
 
 .image-nft {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-}
-
-/* .image-nft {
-    background: url("../images/reto2-images/image-equilibrium.jpg");
+    background: url("");
     background-size: contain;
     background-repeat: no-repeat;
     height: 300px;
     width: 200px;
-} */
+}
 
 
 h1 {
@@ -75,21 +89,27 @@ h1 {
 
 .footer {
     display: flex;
-    justify-content: space-between;
     color: hsl(215, 51%, 70%);
     font-family: "Outfit";
     font-weight: 300;
+    margin-top: 10px;
 }
 
 .autor {
-    margin-left: 5px;
+    margin-left: 10px;
     font-weight: 400;
     color: white;
+    margin-top: 10px;
 }
 
 .avatar {
     border: white solid 0.5px;
     border-radius: 100%;
-    margin-right: 10px;
     height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.creation {
+    margin-top: 10px;
 }

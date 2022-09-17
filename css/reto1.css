@@ -5,11 +5,25 @@
   }
   
   body {
-    background-color: hsl(30, 38%, 92%);
+    background-color: blue;
+    
+  }
+/* propiedad que modifica de acuerdo a tamaño de pantalla minimo */
+  @media (min-width: 600px) {
+    body {
+      background-color: hsl(30, 38%, 92%);
+    }
+  }
+
+  @media (min-width: 900px) {
+    body {
+      background-color:red;
+    }
   }
   
   .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -17,24 +31,133 @@
   
   .left-image {
     background: url("../images/image-product-desktop.jpg");
-    background-size: contain;
+    /* cubre el tamño completo del elemento */
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    background-position: 0% 33%;
+    height: 200px;
     width: 300px;
     background-color: #fff;
     border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
   
   .content {
-    height: 400px;
-    width: 250px;
+    /* height: 400px; */
+    width: 300px;
     background-color: #fff;
-    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 20px;
   }
+
+  .content-price {
+    display: flex;
+    align-items: center;
+  }
   
+  .offert-price {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+  }
+  
+  .real-price {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-left: 10px;
+    font-size: 13px;
+    text-decoration: line-through;
+  }
+
+  button {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: green;
+  }
+
+  @media (min-width: 600px) {
+    .container {
+      flex-direction: row;
+    }
+    
+    .left-image {
+      background-size: cover;
+      background-position: 50% 0%;
+      height: 400px;
+      width: 200px;
+      background-color: #fff;
+      border-radius: 0px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    
+    .content {
+      height: 400px;
+      width: 300px;
+      background-color: #fff;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding: 20px;
+    }
+  }
+
+  @media (min-width: 900px) {  
+    .left-image {
+      background-size: cover;
+      background-position: 50% 25%;
+      height: 400px;
+      width: 400px;
+      background-color: #fff;
+      border-radius: 0px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    
+    .content {
+      height: 400px;
+      width: 400px;
+      background-color: #fff;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding: 30px;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    .content-price {
+      margin-top: 30px;
+    }
+    
+    .offert-price {
+      font-size: 40px;
+      font-weight: 800;
+    }
+    
+    .real-price {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  }
+
   .sub-title {
     font-family: "Montserrat", sans-serif;
     color: hsl(228, 12%, 48%);
@@ -58,41 +181,6 @@
     font-weight: 500;
   }
   
-  .content-price {
-    display: flex;
-    align-items: center;
-  }
+ 
   
-  .offert-price {
-    color: hsl(158, 36%, 37%);
-    font-family: "Fraunces", sans-serif;
-    font-weight: 700;
-  }
-  
-  .real-price {
-    font-family: "Montserrat", sans-serif;
-    color: hsl(228, 12%, 48%);
-    margin-left: 10px;
-    font-size: 13px;
-    text-decoration: line-through;
-  }
-  
-  button {
-    margin-top: 20px;
-    width: 100%;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    background-color: hsl(158, 36%, 37%);
-    border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
 
-  button:hover {
-    cursor: pointer;
-    background-color: green;
-  }
