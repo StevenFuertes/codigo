@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 51px;
+    color: #3a78b5;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(15,77,138),
+                 -1px -1px 0 rgb(12,74,135),
+                 -2px -2px 0 rgb(8,70,131),
+                 -3px -3px 0 rgb(5,67,128),
+                 -4px -4px 0 rgb(2,64,125),
+                 -5px -5px 0 rgb(-1,61,122),
+                 -6px -6px 0 rgb(-4,58,119),
+                 -7px -7px 0 rgb(-7,55,116),
+                 -8px -8px 0 rgb(-11,51,112),
+                 -9px -9px 0 rgb(-14,48,109),
+                 -10px -10px 0 rgb(-17,45,106),
+                 -11px -11px 0 rgb(-20,42,103),
+                 -12px -12px 0 rgb(-23,39,100),
+                 -13px -13px 0 rgb(-27,35,96),
+                 -14px -14px 0 rgb(-30,32,93),
+                 -15px -15px 0 rgb(-33,29,90),
+                 -16px -16px 0 rgb(-36,26,87),
+                 -17px -17px 0 rgb(-39,23,84),
+                 -18px -18px 0 rgb(-42,20,81),
+                 -19px -19px 0 rgb(-46,16,77),
+                 -20px -20px 0 rgb(-49,13,74),
+                 -21px -21px 0 rgb(-52,10,71),
+                 -22px -22px  0 rgb(-55,7,68),
+                 -23px -23px 22px rgba(156,31,75,1),
+                 -23px -23px 1px rgba(156,31,75,0.5),
+                 0px 0px 22px rgba(156,31,75,.2);
+      animation-duration: 6s;
+      animation-name: screen-saver;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+
+/* animacion del h1 */
+
+@keyframes screen-saver {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-right: 100%;
+    }
+
+    10% {
+        margin-top: 500px;
+    }
+
+    30% {
+        margin-top: -500px;
+    }
+
+    50% {
+        margin-top: 500px;
+    }
+
+    70% {
+        margin-top: 500px;
+    }
+
+    90% {
+        margin-top: -500px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+
+}
+
+/* Animemos al p */
+
+/* p {
+    /* partes de una animacion */
+    /* tiempo */
+    animation-duration: 4s;
+
+    /* nombre de la animacion */
+    animation-name: primera-animacion;
+
+    /* repite la animacion n° veces puede ser con un numero o usando infinite para hacerlo infinito */
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} */
+
+/* tenemos que enlazar nuestra animacion con el keyframes y esto se da por el nombre de la animacion */
+
+@keyframes primera-animacion {
+    /* lo que esta dentro se llama fotogramas */
+    
+    /* Inicio de animacion */
+    from {
+        margin-left: 100%;
+        text-shadow: 0px 0px 40px blue;
+        /* margin-top: 40%; */
+    }
+
+    /* Final de animacion */
+    to {
+        margin-right: 100%;
+        color: red;
+        font-size: 40px;
+        text-shadow: 0px 0px 40px green;
+    }
+}
