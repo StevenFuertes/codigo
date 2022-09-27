@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card {
+    background: url(./images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 600px;
+}
+
+.card-back {
+    position: relative;
+    display: inline-block;
+    top: 20%;
+    left: 20%;
+}
+
+.card-front {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10%;
+    height: 200px;
+    width: 380px;
+}
+
+.circle {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.circle-w {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.circle-o {
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px ;
+}
+
+.number-card {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: x-large;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.info-card {
+    position: absolute;
+    top: 95%;
+    left: 15%;
+    color: white;
+    display: flex;
+    font-size: 15px;
+}
+
+.date-card {
+    margin-left: 130px;
+}
+
+.main-white {
+    margin-top: 50px;
+    padding: 40px;
+    width: 600px;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-name {
+    width: 100%;
+    height: 30px;
+}
+
+.input-number {
+    width: 100%;
+    height: 30px;
+}
+
+.expirate {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.input-date {
+    width: 70px;
+    height: 30px;
+}
+
+.cvc-content {
+    margin-left: 15px;
+}
+
+.input-cvc {
+    width: auto;
+    height: 30px;
+}
+
+.bottom-confirm {
+    width: 100%;
+    height: 40px;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 10px;
+    color: white;
+    border-color: hsl(278, 68%, 11%);
+    font-size: 18px;
+}

@@ -56,6 +56,15 @@ h1 {
 
     10% {
         margin-top: 500px;
+
+
+
+
+
+
+
+
+        
     }
 
     30% {
@@ -94,7 +103,7 @@ h1 {
 
     animation-iteration-count: infinite;
     animation-direction: alternate;
-} */
+    /* } */
 
 /* tenemos que enlazar nuestra animacion con el keyframes y esto se da por el nombre de la animacion */
 
