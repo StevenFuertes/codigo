@@ -98,6 +98,10 @@
     height: 30px;
 }
 
+.main-white input:hover {
+    cursor: pointer;
+}
+
 .input-number {
     width: 100%;
     height: 30px;
@@ -125,10 +129,59 @@
 
 .bottom-confirm {
     width: 100%;
-    height: 40px;
+    height: 60px;
     background-color: hsl(278, 68%, 11%);
     border-radius: 10px;
     color: white;
     border-color: hsl(278, 68%, 11%);
     font-size: 18px;
+}
+
+@media (min-width:1440px){
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        height: 100vh;
+    }
+
+    .container-card {
+        background: url(./images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .main-white {
+        margin-top: 0;
+        margin-left: 130px;
+        padding: 40px;
+        width: 600px;
+        gap: 30px;
+        font-size: 25px;
+    }
+
+    .main-white input {
+        height: 45px;
+    }
+
+    .card-back {
+        top: 55%;
+        left: 44%;
+    }
+    
+    .card-front {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-left: 35%;
+        margin-top: 5%;
+        height: 200px;
+        width: 380px;
+    }
+
+    .bottom-confirm {
+        margin-top: 15px;
+        height: 65px;
+    }
 }

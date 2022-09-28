@@ -11,65 +11,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./reto6.css" />
+    <script src="./reto6.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div class="container-card">
-        <div class="card-back">
-          <img class="card-reverse" src="./images/bg-card-back.png" alt="" />
-        </div>
-        <div class="card-front">
-          <img src="./images/bg-card-front.png" alt="" />
-          <div class="circle">
-            <div class="circle-w"></div>
-            <div class="circle-o"></div>
+    <form action="">
+      <div class="container">
+        <div class="container-card">
+          <div class="card-back">
+            <img class="card-reverse" src="./images/bg-card-back.png" alt="" />
           </div>
-          <div class="number-card">0000 0000 0000 0000</div>
-          <div class="info-card">
-            <div class="name-card">JANE APPLESEED</div>
-            <div class="date-card">00/00</div>
-          </div>
-        </div>
-      </div>
-      <div class="main-white">
-        <div class="name">
-          <p>CARDHOLDER NAME</p>
-          <input
-            class="input-name"
-            placeholder="e.g. Jane Appleseed"
-            type="text"
-          />
-        </div>
-        <div class="number">
-          <p>CARD NUMBER</p>
-          <input
-            class="input-number"
-            type="number"
-            placeholder="e.g. 1234 5678 9123 0000"
-          />
-        </div>
-        <div class="expirate">
-          <div>
-            EXP. DATE (MM/YY)
-            <div>
-                <input class="input-date" type="NUMBER" placeholder="MM" />
-                <input class="input-date" type="NUMBER" placeholder="YY" />
+          <div class="card-front">
+            <img src="./images/bg-card-front.png" alt="" />
+            <div class="circle">
+              <div class="circle-w"></div>
+              <div class="circle-o"></div>
             </div>
-          </div>
-          <div class="cvc-content">
-            CVC
-            <div>
-                <input class="input-cvc" type="NUMBER" placeholder="e.g.123" />
+            <div class="number-card">0000 0000 0000 0000</div>
+            <div class="info-card">
+              <div class="name-card">JANE APPLESEED</div>
+              <div class="date-card">00/00</div>
             </div>
           </div>
         </div>
-        <div class="confirm">
-          <form action="">
-            <button class="bottom-confirm" type="submit">Confirm</button>
-          </form>
+        <div class="main-white">
+          <div class="name">
+            <p>CARDHOLDER NAME</p>
+            <input name="cardholder"
+              class="input-name"
+              placeholder="e.g. Jane Appleseed"
+              type="text" required
+            />
+          </div>
+          <div class="number">
+            <p>CARD NUMBER</p>
+            <input name="cardNumber"
+              class="input-number"
+              type="number"
+              placeholder="e.g. 1234 5678 9123 0000" required
+            />
+          </div>
+          <div class="expirate">
+            <div>
+              EXP. DATE (MM/YY)
+              <div>
+                  <input class="input-date" type="NUMBER" placeholder="MM" required />
+                  <input class="input-date" type="NUMBER" placeholder="YY" required />
+              </div>
+            </div>
+            <div class="cvc-content">
+              CVC
+              <div>
+                  <input class="input-cvc" type="NUMBER" placeholder="e.g.123" required />
+              </div>
+            </div>
+          </div>
+          <div class="confirm">
+            <form action="">
+              <button class="bottom-confirm" type="submit">Confirm</button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </form>
   </body>
 </html>
