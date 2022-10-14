@@ -32,14 +32,19 @@ class Task {
       const element = document.querySelector(`#task-${id}`);
       element.remove();
     }
+
+    static updateRender(id, name) {
+      const element = document.querySelector(`#task-name-${id}`)
+      element.textContent = name
+    }
   
     // Es una clase no hace falta usar la palabra function
     render() {
       return `
         <div id="task-${this._id}" class="item__task">
           <input type="checkbox" />
-          <h6>${this._name}</h6>
-          <button>
+          <h6 id="task-name-${this._id}">${this._name}</h6>
+          <button onclick="edit(${this._id})">
             <img src="./images/edit.png" width="15" alt="" />
           </button>
           <button onclick="destroy(${this._id})">
