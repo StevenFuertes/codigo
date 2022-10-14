@@ -25,13 +25,46 @@ btnCreate.onclick = function () {
 
 function destroy(id) {
   // como podemos eliminar un elemento de un array
-  // En la condicion podemos decir que traiga todos los elemenots menos el que tenga
+  // En la condicion podemos decir que traiga todos los elementos menos el que tenga
   // el id que estamos recibiendo
   //? Que retorna filter? = Array
-  const filterTask = arrayTasks.filter((task) => task._id !== Number(id));
+  // const filterTask = arrayTasks.filter((task) => task._id !== Number(id));
   // Acá estamos diciendo que el valor. de arrayTask. es ahora filterTask
-  arrayTasks = filterTask;
-  Task.destroyRender(id);
+  // arrayTasks = filterTask;
+  // Task.destroyRender(id);
+
+  // const element = document.querySelector(`#task-name-${id}`)
+  // element.textDecoration= "underline"
+
+  const element1 = document.querySelector(`#btn-edit-${id}`)
+  element1.style.display = "none"
+
+  const element2 = document.querySelector(`#btn-destroy-${id}`)
+  element2.style.display = "none"
+
+  const element3 = document.querySelector(`#checkbox-${id}`)
+  element3.style.display = "none"
+
+  const element = document.querySelector(`#task-name-${id}`)
+  element.style.textDecoration = "line-through"
+  element.style.fontStyle = "italic"
+  element.style.color = "#ccc"
+  
+  // 
+}
+
+function checking(id) {
+
+  alert("La tarea se marco como completa")
+
+  const element1 = document.querySelector(`#btn-edit-${id}`)
+  element1.style.display = "none"
+
+  const element2 = document.querySelector(`#btn-destroy-${id}`)
+  element2.style.display = "none"
+
+  const element3 = document.querySelector(`#checkbox-${id}`)
+  element3.disabled = true
 }
 
 // ***********************************************************
@@ -105,3 +138,5 @@ function edit(id) {
   // element.nextSibling = cambien la posición a despues del h6
   element.parentNode.insertBefore(container, element.nextSibling);
 }
+
+

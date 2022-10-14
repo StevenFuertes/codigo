@@ -37,17 +37,24 @@ class Task {
       const element = document.querySelector(`#task-name-${id}`)
       element.textContent = name
     }
+
+    // static checkRender(id) {
+    //   const element1 = document.querySelector(`btn-edit-${this.id}`)
+    //   const element2 = document.querySelector(`btn-destroy-${this.id}`)
+    //   element1.remove()
+    //   element2.remove()
+    // }
   
     // Es una clase no hace falta usar la palabra function
     render() {
       return `
         <div id="task-${this._id}" class="item__task">
-          <input type="checkbox" />
+          <input id="checkbox-${this._id}" onclick="checking(${this._id})" type="checkbox" />
           <h6 id="task-name-${this._id}">${this._name}</h6>
-          <button onclick="edit(${this._id})">
+          <button id="btn-edit-${this._id}" onclick="edit(${this._id})">
             <img src="./images/edit.png" width="15" alt="" />
           </button>
-          <button onclick="destroy(${this._id})">
+          <button id="btn-destroy-${this._id}" onclick="destroy(${this._id})">
             <img src="./images/delete.png" width="15" alt="" />
           </button>
         </div>
