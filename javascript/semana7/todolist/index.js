@@ -21,7 +21,14 @@ btnCreate.onclick = function () {
   listTask.innerHTML += task.render();
 
   inputTask.value = "";
+  inputTask.focus()
 };
+
+inputTask.addEventListener("keyup", (event)=> {
+  if(event.key === "Enter"){
+    btnCreate.click()
+  }
+})
 
 function destroy(id) {
   // como podemos eliminar un elemento de un array
