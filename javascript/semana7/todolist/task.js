@@ -20,34 +20,34 @@
 //! que nuestra clase sea exportable, es decir que pueda ser
 //! usada desde otro archivo
 class Task {
-    // Estos parametros
-    constructor(id, name, date, status) {
-      this._id = id;
-      this._name = name;
-      this._date = date;
-      this._status = status;
-    }
-  
-    static destroyRender(id) {
-      const element = document.querySelector(`#task-${id}`);
-      element.remove();
-    }
+  // Estos parametros
+  constructor(id, name, date, status) {
+    this._id = id;
+    this._name = name;
+    this._date = date;
+    this._status = status;
+  }
 
-    static updateRender(id, name) {
-      const element = document.querySelector(`#task-name-${id}`)
-      element.textContent = name
-    }
+  static destroyRender(id) {
+    const element = document.querySelector(`#task-${id}`);
+    element.remove();
+  }
 
-    // static checkRender(id) {
-    //   const element1 = document.querySelector(`btn-edit-${this.id}`)
-    //   const element2 = document.querySelector(`btn-destroy-${this.id}`)
-    //   element1.remove()
-    //   element2.remove()
-    // }
-  
-    // Es una clase no hace falta usar la palabra function
-    render() {
-      return `
+  static updateRender(id, name) {
+    const element = document.querySelector(`#task-name-${id}`)
+    element.textContent = name
+  }
+
+  // static checkRender(id) {
+  //   const element1 = document.querySelector(`btn-edit-${this.id}`)
+  //   const element2 = document.querySelector(`btn-destroy-${this.id}`)
+  //   element1.remove()
+  //   element2.remove()
+  // }
+
+  // Es una clase no hace falta usar la palabra function
+  render() {
+    return `
         <div id="task-${this._id}" class="item__task">
           <input id="checkbox-${this._id}" onclick="checking(${this._id})" type="checkbox" />
           <h6 id="task-name-${this._id}">${this._name}</h6>
@@ -59,5 +59,5 @@ class Task {
           </button>
         </div>
         `;
-    }
   }
+}
