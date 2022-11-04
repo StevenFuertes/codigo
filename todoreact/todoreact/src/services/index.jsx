@@ -4,6 +4,15 @@ const url = "https://6363105e37f2167d6f716e33.mockapi.io/tareas";
 // POST: Crear
 // PUT: Actualizar
 // DELETE: Eliminar
+export const getProfile = async () => {
+  try {
+    const response = await fetch("https://api.github.com/users/stevenFuertes");
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log("Error", error);
+  }
+};
 
 export const get = async () => {
   try {
@@ -40,6 +49,22 @@ export const update = async (id, body) => {
         "Content-type": "application/json",
       },
       body: JSON.stringify(body),
+    });
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// Para la eliminar un registro unicamente necesito el id
+export const destroy = async (id) => {
+  try {
+    const response = await fetch(`${url}/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json",
+      },
     });
     const data = await response.json();
     return data;
