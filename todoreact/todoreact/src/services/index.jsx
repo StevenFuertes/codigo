@@ -18,7 +18,7 @@ export const getBooks = async (search) => {
 // DELETE: Eliminar
 export const getProfile = async () => {
   try {
-    const response = await fetch("https://api.github.com/users/linder3hs");
+    const response = await fetch("https://api.github.com/users/stevenFuertes");
     const data = await response.json();
     return data;
   } catch (error) {
