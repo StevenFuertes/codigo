@@ -1,0 +1,35 @@
+mkdir "nombre de carpeta"
+cd "nombre de carpeta"
+npx create-react-app "nombre de proyecto"
+cd "nombre de proyecto"
+npm start (ejecuta react y manda al puerto 3000 en el navegador)
+[hot reolading (detecta cambios y los refleja en la web)] ya esta incluido en react
+
+////////////////////////
+si queremos clonar un proyecto seguiremos lo siguientes pasos:
+
+clonamos el proyecto
+npm install
+npm start
+
+////////////////////////
+si queremos instalar alertas ya trabajadas con estetica colocar
+
+npm install sweetalert2 (estoy se ejecuta parando el npm start pulsando control +c)
+y otra ves activar el npm start
+
+////////////////////////
+para limpiar el proyecto de los archivos q se crean de manera innecesaria
+setupTests.js
+reportWebVitals.js
+logo.svg
+App.test.js
+public/logo192.png
+public/logo512.png
+
+
+///////////////////////
+si queremos colocar componentes tipo bootstrap usamos material (mui)
+entramos ala pagina e instalamos mediante el npm las siguientes dependencias
+Default installation
+Icons

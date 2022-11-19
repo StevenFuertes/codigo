@@ -1,0 +1,31 @@
+INstalacion de Vite:
+para usar vite tenemos que entrar en la carpeta raiz
+!!! FUERA DE LA CARPETA REACT!!!
+!!ESTO SOLO FUNCIONA CON CMD NO FUNCIONA CON GIT!!
+y colocamos el codigo:
+
+npm create vite@latest
+
+////////////////////////////////////////////////////////////
+
+colocamos el nombre del proyecto : xxxxxx
+
+////////////////////////////////////////////////////////////
+
+luego seleccionamos el tipo de framework : react
+
+////////////////////////////////////////////////////////////
+
+seccionamos el tipo de lenguaje : Typescript
+
+////////////////////////////////////////////////////////////
+
+entrar a la carpeta xxxxxx
+
+luego colocamos : npm install
+
+y luego npm run dev
+
+y copiamos local : http://127.0.0.1:5173/
+
+y lo pegamos en nuestro navegador
